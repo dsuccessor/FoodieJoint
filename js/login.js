@@ -46,6 +46,7 @@ function loginCheck() {
     }
     sessionStorage.setItem('activeUser', JSON.stringify(loginSession))
     return true
+        window.location.replace("https://dsuccessor.github.io/FoodieJoint/FoodieJoint_Admin/index.html");
     }
     else {
     alert('Username and password is incorrect')
