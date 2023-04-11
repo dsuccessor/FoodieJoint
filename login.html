@@ -33,7 +33,14 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+      
+      let userLog = sessionStorage.getItem('activeUser')
+    let activeUser = JSON.parse(userLog)
 
+    if (activeUser !== null || activeUser.status == 'logged in') {
+      window.location.replace("https://dsuccessor.github.io/FoodieJoint/FoodieJoint_Admin/index.html");
+    }
+      
    </head>
    <body>
       <!-- header section start -->
