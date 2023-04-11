@@ -24,6 +24,9 @@ let userLog = sessionStorage.getItem('activeUser')
     if (activeUser == null || activeUser.status !== 'logged in') {
       window.location.replace("../login.html");
     }
+    else {
+      window.location.replace("FoodieJoint_Admin/index.html");
+    }
 
     
     window.dataLayer = window.dataLayer || [];
