@@ -22,7 +22,7 @@ let userLog = sessionStorage.getItem('activeUser')
     let activeUser = JSON.parse(userLog)
 
     if (activeUser == null || activeUser.status !== 'logged in') {
-      window.location.replace("../FoodieJoint_Client/login.html");
+      window.location.replace("../login.html");
     }
 
     
